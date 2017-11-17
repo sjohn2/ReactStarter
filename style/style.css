@@ -1,0 +1,11 @@
+body {
+	background-color: red;
+}
+
+.container{
+	color: black;
+	font-family: 'digital-clock-font';
+	text-align: center;
+	background-color: yellow;
+	margin-top: 20%;
+}
