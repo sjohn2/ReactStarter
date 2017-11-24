@@ -1,11 +1,69 @@
 body {
-	background-color: red;
+	padding-bottom: 100px;
+	background-color: lightblue;
 }
 
-.container{
-	color: black;
-	font-family: 'digital-clock-font';
+.producbox-container {
+	display: inline-block;
+	width: 300px;
 	text-align: center;
-	background-color: yellow;
-	margin-top: 20%;
+	font-family: Georgia;
+}
+
+.product-list-container {
+	margin: 0 auto;
+	width: 950px;
+}
+
+.fa.fa-shopping-cart {
+	float: right;
+	margin-right: 100px;
+	margin-top: -50px;
+}
+
+.fa.fa-shopping-cart:before {
+	font-size: 60px;
+	
+}
+.productbox-details{
+	display: inline-block;
+	width: 300px;
+}
+
+.fa.fa-plus-square,.fa.fa-minus-square{
+	float : right;
+}
+.fa.fa-plus-square,.fa.fa-minus-square:before{
+	font-size: 30px;
+	margin-left: 5px;
+	margin-right: 10px;
+	cursor      : pointer;
+}
+button{
+  background  : transparent;
+}
+
+.plus_button{
+	color: green;
+}
+.minus_button{
+	color: red;
+}
+span{
+	float: right;
+	margin-right: 40px;
+}
+
+h1{
+	font-family: impact;
+	text-decoration: underline;
+	letter-spacing: 5px;
+}
+
+h2{
+	font-family: Georgia;
+}
+
+.productbox-quantity{
+	display: inline-block;
 }

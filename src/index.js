@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TimeContainer from './container/TimeContainer';
-
+//import TimeContainer from './container/TimeContainer';
+//import ProductDetailContainer from './container/ProductContainer';
+import LandingScreen from './container/LandingScreenContainer';
+import DiscriptionScreen from './container/DiscriptionScreenContainer';
 //create a component that output html
 const App = () => {
     return (
         <div>
-          <h1>Hello World</h1>
           <br />
-          <TimeContainer/>
+          <LandingScreen/>
         </div>
         );
 }
