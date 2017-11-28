@@ -67,3 +67,31 @@ h2{
 .productbox-quantity{
 	display: inline-block;
 }
+
+.product_desc_page{
+	margin-top: 50px;
+}
+
+.product_img_div{
+	margin-left: 220px;
+	margin-top: -240px;
+}
+
+.related_product_class{
+	margin-top: 80px;
+}
+
+table,th,td{
+	border : 3px solid black;
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+}
+tr:hover {background-color: #f5f5f5;}
+
+
+.cart_table_div{
+	margin-top: 60px;
+}

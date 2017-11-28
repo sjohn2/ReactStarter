@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import TimeContainer from './container/TimeContainer';
-//import ProductDetailContainer from './container/ProductContainer';
-import LandingScreen from './container/LandingScreenContainer';
-import DiscriptionScreen from './container/DiscriptionScreenContainer';
+import Routes from './routes';
+import {Provider} from 'react-redux';
+import store from './store';
 //create a component that output html
+
 const App = () => {
+	debugger;
     return (
-        <div>
-          <br />
-          <LandingScreen/>
-        </div>
+    	<Provider store={store}>
+          <Routes/>
+        </Provider>
         );
 }
 

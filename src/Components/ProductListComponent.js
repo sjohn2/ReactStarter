@@ -5,7 +5,8 @@ import ProductDetails from '../Components/ProductComponent';
 class ProductList extends React.Component{
 	render(){
 		const product_list =[];
-		this.props.info.forEach(function(product){
+		debugger;
+		this.props.eachProd.forEach(function(product){
 				product_list.push(<ProductDetails prod={product} key={product.id} />);
 		});
 		return(
