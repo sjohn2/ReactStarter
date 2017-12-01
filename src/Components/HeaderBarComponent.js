@@ -7,10 +7,12 @@ class HeaderBar extends React.Component{
 	render(){
 		const num = this.props.quantity;
 		return(
-			<div>
-				<h1> Flip-Cart </h1>
+			<div className="head">
+				<Link to={`/`}>
+				<div className="Flip-Cart-logo"><h1> Flip-Cart </h1></div>
+				</Link>
 				<Link to={`/cart`}>
-					<i className="fa fa-shopping-cart" onClick={()=>{this.props.createTable(num)}}><span><h2>{num}</h2></span></i>
+					<i className="fa fa-shopping-cart"><span><h2>{num}</h2></span></i>
 				</Link>
 			</div>
 			);

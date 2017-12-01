@@ -9,7 +9,7 @@ import LandingScreen from './container/LandingScreenContainer';
 import DiscriptionScreen from './container/DiscriptionScreenContainer' ;
 import CartScreen from './container/CartScreenContainer';
 import NotFoundScreen from './Components/NotFoundScreenComponent';
-debugger;
+
 const Routes = () => (
 	<Router>
 		<div>

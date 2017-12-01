@@ -6,7 +6,6 @@ import store from './store';
 //create a component that output html
 
 const App = () => {
-	debugger;
     return (
     	<Provider store={store}>
           <Routes/>

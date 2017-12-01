@@ -2,7 +2,16 @@ body {
 	padding-bottom: 100px;
 	background-color: lightblue;
 }
+.head{
+	margin-top: 5%; 
+}
 
+.productName{
+	margin-left: 40%;
+	font-family: Times;
+	letter-spacing: 5px;
+	font-size: 200%;
+}
 .producbox-container {
 	display: inline-block;
 	width: 300px;
@@ -19,6 +28,7 @@ body {
 	float: right;
 	margin-right: 100px;
 	margin-top: -50px;
+	color: black;
 }
 
 .fa.fa-shopping-cart:before {
@@ -94,4 +104,8 @@ tr:hover {background-color: #f5f5f5;}
 
 .cart_table_div{
 	margin-top: 60px;
+}
+
+.Flip-Cart-logo{
+	color: black;
 }

@@ -11,6 +11,7 @@ import {find} from 'lodash';
 class DiscriptionScreen extends React.Component{
 
 	render(){
+		debugger;
 		const pro_dta = product_data;
 		const product= find(pro_dta,{id: parseInt(this.props.match.params.id)});
 		return(

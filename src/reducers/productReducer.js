@@ -1,14 +1,14 @@
-import { POPULATE_PRODUCTS } from '../Actions/ActionTypes';
+import {POPULATE_PRODUCTS} from '../Actions/ActionTypes';
 
-function productReducer(state=0 , action){
-		debugger;
-		switch(action.Types){
-			case 'POPULATE_PRODUCTS' :
-				return [
-					...action.data
-				]
-			default : 
-				return state;
-		}
+function productReducer(state={}, action)
+{
+	switch(action.type){
+		case POPULATE_PRODUCTS : 
+				return[
+					...action.data,
+					];
+		default :
+			return state;
 	}
+}		
 export default productReducer;

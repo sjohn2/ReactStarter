@@ -7,9 +7,7 @@ class ProductDetails extends React.Component{
 
 	
 	render(){
-	debugger;
 		const product = this.props.prod;
-		debugger;
 		return(
 			<div className="producbox-container">
 				<br/>

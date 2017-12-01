@@ -11,7 +11,8 @@ class CartListGen extends React.Component{
 				<td><img src={pro_data.url} height="100" width="50" /></td>
  				<td>{pro_data.name}</td>
  				<td>$ {pro_data.price}</td>
- 				<td></td>
+ 				<td>{pro_data.quantity}</td>
+ 				<td>{pro_data.price * pro_data.quantity}</td>
  			</tr>
 			);
 	}
