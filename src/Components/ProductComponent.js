@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom';
 import {addToCart,removeFromCart} from '../Actions/cartAction';
 import {connect} from 'react-redux';
 
-class ProductDetails extends React.Component{
-
-	
+class ProductDetails extends React.Component{	
 	render(){
 		const product = this.props.prod;
 		return(

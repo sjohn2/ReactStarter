@@ -2,6 +2,7 @@ import React from 'react' ;
  
 class ProductDiscription extends React.Component{
 	render(){
+		/*debugger;*/
 		const product = this.props.product_sent_Description;
 		return(
 			<div className="product_desc_page">

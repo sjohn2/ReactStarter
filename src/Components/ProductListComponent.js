@@ -4,9 +4,9 @@ import ProductDetails from '../Components/ProductComponent';
 
 class ProductList extends React.Component{
 	render(){
-		const product_list =[];
-	debugger;
-		this.props.eachProd.forEach(function(product){
+		const productArray = this.props.products_sending
+		const product_list = []
+		productArray.forEach(function(product){
 				product_list.push(<ProductDetails prod={product} key={product.id} />);
 		});
 		return(
@@ -20,4 +20,12 @@ class ProductList extends React.Component{
 	}
 }
 
-export default ProductList;
+/*ProductList.defaultProps = {
+	products : [],
+}
+
+const mapStateToProps = (state) =>({
+	products : state.productReducer
+});*/
+
+export default /*connect(mapStateToProps)(*/ProductList/*)*/;

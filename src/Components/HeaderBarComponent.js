@@ -5,7 +5,8 @@ import {connect} from 'react-redux';
 
 class HeaderBar extends React.Component{
 	render(){
-		const num = this.props.quantity;
+		/*debugger;*/
+		var num = this.props.quantity;
 		return(
 			<div className="head">
 				<Link to={`/`}>
@@ -22,16 +23,14 @@ class HeaderBar extends React.Component{
 const mapStateToProps =(state) =>{
 	var quantity=0;
 	if(state.cartReducer.items != undefined ){
-		for (var i = 0; i < state.cartReducer.items.length; i++) {
-				quantity += state.cartReducer.items[i].quantity
+			for (var i = 0; i < state.cartReducer.items.length; i++) {
+					quantity += state.cartReducer.items[i].quantity
+			}
+			return {quantity: quantity};
 		}
-		return {quantity: quantity};
-	}
 	else{
-		return {quantity : 0};
-	}
+			return {quantity : 0};
+		}
 
 }
-
-
 export default connect(mapStateToProps,null)(HeaderBar);

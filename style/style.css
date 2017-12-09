@@ -6,6 +6,7 @@ body {
 	margin-top: 5%; 
 }
 
+
 .productName{
 	margin-left: 40%;
 	font-family: Times;
@@ -64,7 +65,7 @@ span{
 	margin-right: 40px;
 }
 
-h1{
+.Flip-Cart-logo h1{
 	font-family: impact;
 	text-decoration: underline;
 	letter-spacing: 5px;
@@ -72,6 +73,18 @@ h1{
 
 h2{
 	font-family: Georgia;
+}
+
+.empty_cart h1{
+    text-align: center;
+    margin-top: 113px;
+    font-size: 50px;
+    font-family: Georgia;
+}
+.empty_cart h4{
+	text-align: right;
+	font-size: 20px;
+	font-family: calibri;
 }
 
 .productbox-quantity{
@@ -97,15 +110,98 @@ table,th,td{
 	height: 50px;
 	text-align: center;
 	font-family: verdana;
-	font-size: 20px;
+	font-size: 20px; 
+    width: -webkit-fill-available
 }
+
+.Buy button {
+    width: 363px;
+    float: right;
+    margin-top: -49px;
+    height: 48px;
+    color: black;
+    background-color: black;
+    border-width: thick;
+    border-color: orangered;
+    font-size: 30px;
+    font-family: fantasy;
+    color: orangered;
+}
+.buying_image{
+	width: 156px;
+    margin-left: 383px;
+    margin-top: -411px;
+}
+
 tr:hover {background-color: #f5f5f5;}
-
-
+.Buy{
+	float: right;
+}
 .cart_table_div{
 	margin-top: 60px;
 }
 
 .Flip-Cart-logo{
 	color: black;
+}
+
+input[type="text"] {
+    width: 236px;
+    display: list-item;
+    margin-bottom: 1px;
+    background-color: papayawhip;
+    margin-left: 20px; 
+}
+
+.Buyingitems{
+	margin-top: 50px;
+}
+
+input[type="submit"] {
+    width: 127px;
+    background-color: black;
+    margin-left: 128px;
+    margin-top: 24px;
+    color: white;
+}
+.submit_div button {
+    width: 170px;
+    margin-left: 20px;
+    margin-top: 24px;
+    height: 54px;
+    color: white;
+    font-size: 30px;
+    background-color: teal;
+    border-width: thick;
+    border-color: papayawhip;
+    font-family: Times;
+}
+
+.buying_detail h1 {
+    margin-left: 420px;
+    margin-top: -20%;
+    font-size: 50px;
+    color: black;
+    font-style: oblique;
+    font-family: serif;
+}
+input::-webkit-input-placeholder{
+	color: black;
+	text-indent: 5%;
+}
+
+.Buyingitems h1{
+    font-size: 40px;
+    color: black;
+    font-style: oblique;
+    font-family: serif;
+}
+.related_product_class h3 {
+    font-family: Times;
+    font-size: 41px;
+    margin-top: 10%;
+}
+
+.rel_productbox-details i{
+	
 }

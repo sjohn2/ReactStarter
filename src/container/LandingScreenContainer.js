@@ -1,39 +1,29 @@
 import React from 'react';
 import HeaderBar from '../Components/HeaderBarComponent';
-import  {product_data}   from '../stub';
 import ProductList from '../Components/ProductListComponent';
 import {populateProducts} from '../Actions/cartAction';
 import {connect} from 'react-redux';
 
 class LandingScreen extends React.Component{
-
-	componentWillMount(){
-		// const products = product_data
-		this.props.populateProducts(product_data);
-	}
-
 	render(){
-		debugger;
-		// const product_list = product_data
+/*		debugger;*/
+		var total_products = this.props.quantity
+		const products_sent = this.props.products
 		return(
 			<div>
 				<HeaderBar />
-				<ProductList eachProd={product_data}/>
+				<ProductList products_sending = {products_sent}/>
 			</div>
 			);
 	}
 }
 
 LandingScreen.defaultProps = {
-	product : [],
+	products : [],
 }
+const mapStateToProps =(state) =>{
 
-const mapStateToProps = (state) =>({
-	product : state.productReducer
-});
-
-const mapDispatchToProps = (dipatch) =>({
-	populateProducts : (product) => dipatch(populateProducts(product))
-});
-
-export default connect(mapStateToProps,mapDispatchToProps)(LandingScreen);
+	return {products : state.productReducer};
+		
+}
+export default connect(mapStateToProps,null)(LandingScreen);
